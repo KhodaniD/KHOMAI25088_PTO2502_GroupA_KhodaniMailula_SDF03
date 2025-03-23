@@ -45,3 +45,134 @@ img {
     flex-direction: column;
     align-items: center;
 }
+.profile {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column; /* Align items horizontally */
+
+    align-items: flex-start; /* Align items to the center */
+
+    justify-content: flex-start; /* Align items to the start */
+
+    
+
+}
+
+.profile::after {
+
+    content: "";
+
+    display: block;
+
+    clear: both;
+
+}
+
+.profile-image {
+
+    width: 150px; /* Set a fixed width for the image container */
+
+    margin-right: 3rem; /* Add space to the right of the image */
+
+}
+
+.profile-image img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+
+.profile-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1; /* Allow the profile info to grow */
+    width: 100%;
+
+}
+
+.profile-user-settings {
+    display: flex;
+    margin-top:10px; /* Add space above the user settings */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px;
+
+}
+
+.profile-user-name {
+    font-size: 2rem;
+    font-weight: 20;
+    margin-bottom: 10px; /* Add space below the username */
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center; /* Align items to the center */
+    margin-top: 10px; /* Add space above the profile stats */
+    color: #808080;
+
+}
+
+.profile-edit-btn {
+padding: 5px 10px;
+border: 0.1rem solid #dbdbdb;
+border-radius: 6px;
+font-size: 10px;
+margin-right: 1rem;
+margin-bottom: 10px; /* Add space below the edit button */
+
+}
+
+.profile-settings-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.profile-stats {
+    width: 100%;
+    display: flex; /* Make profile stats a flex container */
+    justify-content: center; /* Align items to the center */
+    margin-top: 10px; /* Add space above the profile stats */
+
+}
+
+.profile-stats li {
+    display: inline-block;
+    margin-right: 4rem;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 2rem;
+
+}
+
+.profile-stat-count {
+    font-weight: 200;
+
+}
+
+.profile-real-name {
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 10px; /* Add space above the real name */
+}
+
+.profile-bio {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 10px; /* Add space above the bio */
+    margin-bottom: 10px; /* Add space below the bio */
+}
